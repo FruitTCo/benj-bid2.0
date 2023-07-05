@@ -1,5 +1,5 @@
 {
-  "name": "benj-bid2.0",
+  "name": "benj_bid2.0",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,10 +9,28 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "eslint": "8.42.0",
-    "eslint-config-next": "13.4.5",
-    "next": "13.4.5",
+    "@prisma/client": "^4.15.0",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.37.3",
+    "country-state-city": "^3.1.4",
+    "cron": "^2.3.1",
+    "eslint": "8.38.0",
+    "eslint-config-next": "13.3.0",
+    "moment": "^2.29.4",
+    "next": "13.3.0",
+    "next-auth": "^4.22.1",
+    "node-fetch": "^3.3.1",
+    "nodemailer": "^6.9.3",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-countdown": "^2.3.5",
+    "react-dom": "18.2.0",
+    "react-odometerjs": "^3.1.0",
+    "react-wow": "^1.0.0",
+    "swiper": "^9.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "20.3.3",
+    "@types/react": "18.2.14",
+    "prisma": "^4.15.0"
   }
 }

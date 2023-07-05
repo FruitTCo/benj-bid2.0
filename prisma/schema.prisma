@@ -1,0 +1,95 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model BidCategory {
+  id        String    @id @default(auto()) @map("_id") @db.ObjectId
+  name      String
+  createdAt DateTime  @default(now())
+  BidItem   BidItem[]
+}
+
+model BidItem {
+  id             String         @id @default(auto()) @map("_id") @db.ObjectId
+  category       BidCategory    @relation(fields: [categoryId], references: [id])
+  categoryId     String         @db.ObjectId
+  description    String?
+  completed      Boolean?       @default(false)
+  BidItemImage   BidItemImage[]
+  Purchase       Purchase[]
+  createdAt      DateTime       @default(now())
+  endsAt         DateTime?
+  Bidders        Bids[]
+  name           String
+  minBidAmount   Int            @default(0)
+  startBidAmount Int            @default(0)
+  itemCondition  String
+  sellersNote    String
+  user           User           @relation(fields: [userId], references: [id])
+  userId         String         @db.ObjectId // relation scalar field (used in the `@relation` attribute above)
+}
+
+model BidItemImage {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  bidItem   BidItem? @relation(fields: [bidItemId], references: [id])
+  bidItemId String?  @db.ObjectId
+  image     String?
+}
+
+model User {
+  id        String     @id @default(auto()) @map("_id") @db.ObjectId
+  firstName String
+  lastName  String
+  email     String     @unique
+  phone     String?    @unique
+  password  String
+  createdAt DateTime   @default(now())
+  updatedAt DateTime?  @updatedAt
+  address   Address?
+  purchases Purchase[]
+  biddings  Bids[]
+  listings  BidItem[]
+}
+
+model Address {
+  id      String  @id @default(auto()) @map("_id") @db.ObjectId
+  user    User    @relation(fields: [userId], references: [id])
+  userId  String  @unique @db.ObjectId // relation scalar field (used in the `@relation` attribute above)
+  line1   String
+  line2   String?
+  city    String
+  country String
+  state   String
+  zipCode String
+}
+
+model Purchase {
+  id             String  @id @default(auto()) @map("_id") @db.ObjectId
+  user           User    @relation(fields: [userId], references: [id])
+  userId         String  @db.ObjectId // relation scalar field (used in the `@relation` attribute above)
+  bid            BidItem @relation(fields: [bidId], references: [id])
+  bidId          String  @db.ObjectId // relation scalar field (used in the `@relation` attribute above)
+  ordercompleted Boolean @default(false)
+  orderpickedup  Boolean @default(false)
+  pending        Boolean @default(false)
+  complete       Boolean @default(false)
+}
+
+model Bids {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  user      User     @relation(fields: [userId], references: [id])
+  userId    String   @db.ObjectId // relation scalar field (used in the `@relation` attribute above)
+  bid       BidItem  @relation(fields: [bidId], references: [id])
+  bidId     String   @db.ObjectId // relation scalar field (used in the `@relation` attribute above)
+  amount    Int
+  status    Boolean? @default(false)
+  createdAt DateTime @default(now())
+}
