@@ -4,6 +4,7 @@ import { useRef } from "react";
 import ReactWOW from "react-wow";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from 'next/image'
 
 export default function Page() {
   const chooseUs = useRef();

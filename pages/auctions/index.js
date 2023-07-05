@@ -5,7 +5,6 @@ import { useSearchParams } from "next/navigation";
 import { useRouter } from "next/router";
 
 export default function Page(props) {
-  
   const { items } = props;
 
   const [live_auction, setLive_Auction] = useState(items);
@@ -35,9 +34,13 @@ export default function Page(props) {
             type="search"
             className="form-control"
             placeholder="Search..."
-            onChange={(e)=>setSearchParam(e.target.value)}
+            onChange={(e) => setSearchParam(e.target.value)}
           />
-          <span onClick={onSearch} className="input-group-text border-0" id="search-addon">
+          <span
+            onClick={onSearch}
+            className="input-group-text border-0"
+            id="search-addon"
+          >
             <i className="fas fa-search"></i>
           </span>
         </div>
@@ -46,11 +49,7 @@ export default function Page(props) {
       <div className="container">
         <div className="row gy-4 mb-60 d-flex justify-content-center">
           {live_auction.map((item) => {
-            return (
-              <AuctionItem
-                item={item}
-              />
-            );
+            return <AuctionItem key={item.id} item={item} />;
           })}
         </div>
 
@@ -91,15 +90,10 @@ export default function Page(props) {
   );
 }
 
-
 export async function getServerSideProps(context) {
-
-  const items = await fetch(
-    "http://localhost:3000/api/auctions",
-    {
-      method: "GET",
-    }
-  ).then((res) => res.json());
+  const items = await fetch("http://localhost:3000/api/auctions", {
+    method: "GET",
+  }).then((res) => res.json());
 
   return {
     props: {

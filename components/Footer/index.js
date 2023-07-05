@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -15,7 +16,7 @@ export default function Footer() {
             <div className="col-lg-3 col-md-6">
               <div className="footer-item">
                 <Link href="/"
-                  ><img alt="image" src="/next.svg"
+                  ><Image alt="image" src="/next.svg"
                 /></Link>
                 <p>
                   Lorem ipsum dolor sit amet consecte tur adipisicing elit, sed
@@ -27,7 +28,7 @@ export default function Footer() {
                   >
                     <input type="text" placeholder="Enter your email" />
                     <button type="submit">
-                      <img
+                      <Image
                         alt="image"
                         src="/assets/images/icons/send-icon.svg"
                       />
@@ -75,27 +76,27 @@ export default function Footer() {
               <ul className="footer-logo-list">
                 <li>
                   <Link href="#"
-                    ><img alt="image" src="/assets/images/bg/footer-pay1.png"
+                    ><Image alt="image" src="/assets/images/bg/footer-pay1.png"
                   /></Link>
                 </li>
                 <li>
                   <Link href="#"
-                    ><img alt="image" src="/assets/images/bg/footer-pay2.png"
+                    ><Image alt="image" src="/assets/images/bg/footer-pay2.png"
                   /></Link>
                 </li>
                 <li>
                   <Link href="#"
-                    ><img alt="image" src="/assets/images/bg/footer-pay3.png"
+                    ><Image alt="image" src="/assets/images/bg/footer-pay3.png"
                   /></Link>
                 </li>
                 <li>
                   <Link href="#"
-                    ><img alt="image" src="/assets/images/bg/footer-pay4.png"
+                    ><Image alt="image" src="/assets/images/bg/footer-pay4.png"
                   /></Link>
                 </li>
                 <li>
                   <Link href="#"
-                    ><img alt="image" src="/assets/images/bg/footer-pay5.png"
+                    ><Image alt="image" src="/assets/images/bg/footer-pay5.png"
                   /></Link>
                 </li>
               </ul>

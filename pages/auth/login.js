@@ -19,12 +19,12 @@ export default function Login({ providers }) {
 
   return (
     <div className="login-section pt-120 pb-120">
-      <img
+      <Image
         alt="imges"
         src="/assets/images/bg/section-bg.png"
         className="img-fluid section-bg-top"
       />
-      <img
+      <Image
         alt="imges"
         src="/assets/images/bg/section-bg.png"
         className="img-fluid section-bg-bottom"

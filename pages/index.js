@@ -487,7 +487,7 @@ export default function Home(props) {
               <ReactWOW animation="fadeInDown" duration="1.5s" delay="0.2s">
                 <div className="counter-single text-center d-flex flex-row hover-border1">
                   <div className="counter-icon">
-                    <img alt="image" src="/assets/images/icons/employee.svg" />
+                    <Image alt="image" src="/assets/images/icons/employee.svg" />
                   </div>
                   <div className="coundown d-flex flex-column">
                     <h3>5400&nbsp;</h3>
@@ -500,7 +500,7 @@ export default function Home(props) {
               <ReactWOW animation="fadeInDown" duration="1.5s" delay="0.4s">
                 <div className="counter-single text-center d-flex flex-row hover-border1">
                   <div className="counter-icon">
-                    <img alt="image" src="/assets/images/icons/review.svg" />
+                    <Image alt="image" src="/assets/images/icons/review.svg" />
                   </div>
                   <div className="coundown d-flex flex-column">
                     <h3>1250&nbsp;</h3>
@@ -513,7 +513,7 @@ export default function Home(props) {
               <ReactWOW animation="fadeInDown" duration="1.5s" delay="0.6s">
                 <div className="counter-single text-center d-flex flex-row hover-border1">
                   <div className="counter-icon">
-                    <img alt="image" src="/assets/images/icons/smily.svg" />
+                    <Image alt="image" src="/assets/images/icons/smily.svg" />
                   </div>
                   <div className="coundown d-flex flex-column">
                     <h3>4250&nbsp;</h3>
@@ -526,7 +526,7 @@ export default function Home(props) {
               <ReactWOW animation="fadeInDown" duration="1.5s" delay="0.8s">
                 <div className="counter-single text-center d-flex flex-row hover-border1">
                   <div className="counter-icon">
-                    <img alt="image" src="/assets/images/icons/comment.svg" />
+                    <Image alt="image" src="/assets/images/icons/comment.svg" />
                   </div>
                   <div className="coundown d-flex flex-column">
                     <h3>500&nbsp;</h3>
@@ -540,27 +540,27 @@ export default function Home(props) {
       </div>
 
       <div className="testimonial-section pt-80 pb-80">
-        <img
+        <Image
           alt="image"
           src="/assets/images/bg/client-right.png"
           className="client-right-vector"
         />
-        <img
+        <Image
           alt="image"
           src="/assets/images/bg/client-left.png"
           className="client-left-vector"
         />
-        <img
+        <Image
           alt="image"
           src="/assets/images/bg/clent-circle1.png"
           className="client-circle1"
         />
-        <img
+        <Image
           alt="image"
           src="/assets/images/bg/clent-circle2.png"
           className="client-circle2"
         />
-        <img
+        <Image
           alt="image"
           src="/assets/images/bg/clent-circle3.png"
           className="client-circle3"
@@ -605,13 +605,13 @@ export default function Home(props) {
                 <SwiperSlide>
                   <ReactWOW animation="fadeInDown" duration="1.5s" delay=".4s">
                     <div className="testimonial-single hover-border1">
-                      <img
+                      <Image
                         alt="image"
                         src="/assets/images/icons/quote-green.svg"
                         className="quote-icon"
                       />
                       <div className="testi-img">
-                        <img alt="image" src="/assets/images/bg/testi1.png" />
+                        <Image alt="image" src="/assets/images/bg/testi1.png" />
                       </div>
                       <div className="testi-content">
                         <p className="para">
@@ -632,13 +632,13 @@ export default function Home(props) {
                 <SwiperSlide>
                   <ReactWOW animation="fadeInDown" duration="1.5s" delay=".4s">
                     <div className="testimonial-single hover-border1">
-                      <img
+                      <Image
                         alt="image"
                         src="/assets/images/icons/quote-green.svg"
                         className="quote-icon"
                       />
                       <div className="testi-img">
-                        <img alt="image" src="/assets/images/bg/testi2.png" />
+                        <Image alt="image" src="/assets/images/bg/testi2.png" />
                       </div>
                       <div className="testi-content">
                         <p className="para">
@@ -659,13 +659,13 @@ export default function Home(props) {
                 <SwiperSlide>
                   <ReactWOW animation="fadeInDown" duration="1.5s" delay=".4s">
                     <div className="testimonial-single hover-border1">
-                      <img
+                      <Image
                         alt="image"
                         src="/assets/images/icons/quote-green.svg"
                         className="quote-icon"
                       />
                       <div className="testi-img">
-                        <img alt="image" src="/assets/images/bg/testi3.png" />
+                        <Image alt="image" src="/assets/images/bg/testi3.png" />
                       </div>
                       <div className="testi-content">
                         <p className="para">

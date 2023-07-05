@@ -6,12 +6,12 @@ export default function Page() {
   return (
     <>
       <div className="contact-section pt-120 pb-120">
-        <img
+        <Image
           alt="image"
           src="/assets/images/bg/section-bg.png"
           className="img-fluid section-bg-top"
         />
-        <img
+        <Image
           alt="image"
           src="/assets/images/bg/section-bg.png"
           className="img-fluid section-bg-bottom"

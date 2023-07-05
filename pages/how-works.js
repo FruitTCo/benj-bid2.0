@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <>
     <div className="how-work-section pt-120 pb-120">
-      <img
+      <Image
         alt="image"
         src="/assets/images/bg/section-bg.png"
         className="section-bg-top"
@@ -48,7 +48,7 @@ export default function Page() {
             <ReactWOW animation="fadeInDown" delay="0.2s" duration="1.5s"><div
               className="how-work-img"
             >
-              <img
+              <Image
                 alt="image"
                 src="/assets/images/bg/how-work1.png"
                 className="work-img"
@@ -64,7 +64,7 @@ export default function Page() {
             <ReactWOW animation="fadeInDown" delay="0.2s" duration="1.5s"><div
               className="how-work-img"
             >
-              <img
+              <Image
                 alt="image"
                 src="/assets/images/bg/how-work2.png"
                 className="work-img"
@@ -127,7 +127,7 @@ export default function Page() {
             <div
               className="how-work-img"
             >
-              <img
+              <Image
                 alt="image"
                 src="/assets/images/bg/how-work3.png"
                 className="work-img"
@@ -139,13 +139,13 @@ export default function Page() {
     </div>
 
       <div ref={chooseUs} className="choose-us-section pb-120">
-        <img
+        <Image
           src="/assets/images/bg/section-bg.png"
           className="section-bg-bottom"
           alt=""
         />
         <div className="container position-relative">
-          <img
+          <Image
             src="/assets/images/bg/angle-vector.png"
             className="img-fluid angle-vector"
             alt=""
@@ -369,7 +369,7 @@ export default function Page() {
               <ReactWOW animation="fadeInDown" duration="1.5s" delay="0.2s">
                 <div className="counter-single text-center d-flex flex-row hover-border1">
                   <div className="counter-icon">
-                    <img alt="image" src="/assets/images/icons/employee.svg" />
+                    <Image alt="image" src="/assets/images/icons/employee.svg" />
                   </div>
                   <div className="coundown d-flex flex-column">
                     <h3>5400&nbsp;</h3>
@@ -382,7 +382,7 @@ export default function Page() {
               <ReactWOW animation="fadeInDown" duration="1.5s" delay="0.4s">
                 <div className="counter-single text-center d-flex flex-row hover-border1">
                   <div className="counter-icon">
-                    <img alt="image" src="/assets/images/icons/review.svg" />
+                    <Image alt="image" src="/assets/images/icons/review.svg" />
                   </div>
                   <div className="coundown d-flex flex-column">
                     <h3>1250&nbsp;</h3>
@@ -395,7 +395,7 @@ export default function Page() {
               <ReactWOW animation="fadeInDown" duration="1.5s" delay="0.6s">
                 <div className="counter-single text-center d-flex flex-row hover-border1">
                   <div className="counter-icon">
-                    <img alt="image" src="/assets/images/icons/smily.svg" />
+                    <Image alt="image" src="/assets/images/icons/smily.svg" />
                   </div>
                   <div className="coundown d-flex flex-column">
                     <h3>4250&nbsp;</h3>
@@ -408,7 +408,7 @@ export default function Page() {
               <ReactWOW animation="fadeInDown" duration="1.5s" delay="0.8s">
                 <div className="counter-single text-center d-flex flex-row hover-border1">
                   <div className="counter-icon">
-                    <img alt="image" src="/assets/images/icons/comment.svg" />
+                    <Image alt="image" src="/assets/images/icons/comment.svg" />
                   </div>
                   <div className="coundown d-flex flex-column">
                     <h3>500&nbsp;</h3>

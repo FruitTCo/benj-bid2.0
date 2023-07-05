@@ -7,6 +7,7 @@ import ReactWOW from "react-wow";
 import Timer from "@/components/Timer";
 import MaskedString from "@/components/MaskedString";
 import { useSession } from "next-auth/react";
+import Image from 'next/image'
 
 // Generates `/projects/1` and `/projects/2`
 export async function getStaticPaths() {
@@ -143,12 +144,12 @@ export default function Page(props) {
   return (
     <>
       <div className="auction-details-section pt-120">
-        <img
+        <Image
           alt="image"
           src="/assets/images/bg/section-bg.png"
           className="img-fluid section-bg-top"
         />
-        <img
+        <Image
           alt="image"
           src="/assets/images/bg/section-bg.png"
           className="img-fluid section-bg-bottom"
@@ -170,7 +171,7 @@ export default function Page(props) {
                         aria-controls="gallery-img1"
                         onClick={() => setActiveImage(i.image)}
                       >
-                        <img
+                        <Image
                           alt="image"
                           src={i.image}
                           className="img-fluid"
@@ -190,7 +191,7 @@ export default function Page(props) {
                   className="tab-pane big-image fade show active"
                   id="gallery-img1"
                 >
-                  <img alt="image" src={ActiveImage} className="img-fluid" />
+                  <Image alt="image" src={ActiveImage} className="img-fluid" />
                 </div>
               </div>
             </div>
@@ -409,7 +410,7 @@ export default function Page(props) {
               <ReactWOW animation="fadeInDown" duration="1.5s" delay="0.2s">
                 <div className="counter-single text-center d-flex flex-row hover-border1">
                   <div className="counter-icon">
-                    <img alt="image" src="/assets/images/icons/employee.svg" />
+                    <Image alt="image" src="/assets/images/icons/employee.svg" />
                   </div>
                   <div className="coundown d-flex flex-column">
                     <h3>5400&nbsp;</h3>
@@ -422,7 +423,7 @@ export default function Page(props) {
               <ReactWOW animation="fadeInDown" duration="1.5s" delay="0.4s">
                 <div className="counter-single text-center d-flex flex-row hover-border1">
                   <div className="counter-icon">
-                    <img alt="image" src="/assets/images/icons/review.svg" />
+                    <Image alt="image" src="/assets/images/icons/review.svg" />
                   </div>
                   <div className="coundown d-flex flex-column">
                     <h3>1250&nbsp;</h3>
@@ -435,7 +436,7 @@ export default function Page(props) {
               <ReactWOW animation="fadeInDown" duration="1.5s" delay="0.6s">
                 <div className="counter-single text-center d-flex flex-row hover-border1">
                   <div className="counter-icon">
-                    <img alt="image" src="/assets/images/icons/smily.svg" />
+                    <Image alt="image" src="/assets/images/icons/smily.svg" />
                   </div>
                   <div className="coundown d-flex flex-column">
                     <h3>4250&nbsp;</h3>
@@ -448,7 +449,7 @@ export default function Page(props) {
               <ReactWOW animation="fadeInDown" duration="1.5s" delay="0.8s">
                 <div className="counter-single text-center d-flex flex-row hover-border1">
                   <div className="counter-icon">
-                    <img alt="image" src="/assets/images/icons/comment.svg" />
+                    <Image alt="image" src="/assets/images/icons/comment.svg" />
                   </div>
                   <div className="coundown d-flex flex-column">
                     <h3>500&nbsp;</h3>

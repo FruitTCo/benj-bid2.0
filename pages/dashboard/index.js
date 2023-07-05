@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { Country, State, City } from "country-state-city";
 import ConvertDate from "@/utils/ConvertedDate";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Dashboard(props) {
   const { data: session, status, update } = useSession();
@@ -303,12 +304,12 @@ export default function Dashboard(props) {
   // if (session) {
   return (
     <div className="dashboard-section pt-120 pb-120">
-      <img
+      <Image
         alt="image"
         src="assets/images/bg/section-bg.png"
         className="img-fluid section-bg-top"
       />
-      <img
+      <Image
         alt="image"
         src="assets/images/bg/section-bg.png"
         className="img-fluid section-bg-bottom"
@@ -1059,7 +1060,7 @@ export default function Dashboard(props) {
                           return (
                             <tr key={item.id}>
                               <td data-label="Image">
-                                <img
+                                <Image
                                   alt="image"
                                   src={item.bid.BidItemImage[0].image}
                                   className="img-fluid"
@@ -1094,7 +1095,7 @@ export default function Dashboard(props) {
                               </td>
                               <td data-label="Action">
                                 <Link href={`/auctions/${item.bid.id}`} className="eg-btn action-btn green">
-                                  <img
+                                  <Image
                                     alt="image"
                                     src="assets/images/icons/aiction-icon.svg"
                                   />
@@ -1144,7 +1145,7 @@ export default function Dashboard(props) {
                             <tr key={listing?.id}>
                               <td data-label="Title">{listing?.name}</td>
                               <td data-label="Image">
-                                <img
+                                <Image
                                   alt="image"
                                   src={listing?.BidItemImage[0]?.image}
                                   className="img-fluid"
@@ -1166,7 +1167,7 @@ export default function Dashboard(props) {
                               <td data-label="Status">{listing?.endsAt}</td>
                               <td data-label="Action">
                                 <Link href={`/auctions/${listing.id}`} className="eg-btn action-btn green">
-                                  <img
+                                  <Image
                                     alt="image"
                                     src="assets/images/icons/aiction-icon.svg"
                                   />
@@ -1212,7 +1213,7 @@ export default function Dashboard(props) {
                             <tr key={item?.id}>
                               <td data-label="Title">{item?.name}</td>
                               <td data-label="Image">
-                                <img
+                                <Image
                                   alt="image"
                                   src={item?.BidItemImage[0]?.image}
                                   className="img-fluid"
@@ -1234,7 +1235,7 @@ export default function Dashboard(props) {
                               <td data-label="Status">{item?.endsAt}</td>
                               <td data-label="Action">
                                 <button className="eg-btn action-btn green">
-                                  <img
+                                  <Image
                                     alt="image"
                                     src="assets/images/icons/aiction-icon.svg"
                                   />
@@ -1442,7 +1443,7 @@ export default function Dashboard(props) {
                           <div className="col-xl-12 col-lg-12 col-md-12">
                             <div className="d-flex flex-row flex-wrap">
                               {imgsSrc.map((imgLink) => (
-                                <img
+                                <Image
                                   className="p-3"
                                   style={{
                                     width: "100px",
@@ -1518,7 +1519,7 @@ export default function Dashboard(props) {
                         <td data-label="Bidding ID">Bidding_HvO253gT</td>
                         <td data-label="Bid Amount(NGN)">₦1222.8955</td>
                         <td data-label="Image">
-                          <img
+                          <Image
                             alt="image"
                             src="assets/images/bg/order1.png"
                             className="img-fluid"
@@ -1529,7 +1530,7 @@ export default function Dashboard(props) {
                         </td>
                         <td data-label="Action">
                           <button className="eg-btn action-btn green">
-                            <img
+                            <Image
                               alt="image"
                               src="assets/images/icons/aiction-icon.svg"
                             />
@@ -1541,14 +1542,14 @@ export default function Dashboard(props) {
                         <td data-label="Bidding ID">Bidding_HvO253gT</td>
                         <td data-label="Bid Amount(NGN)">₦1222.8955</td>
                         <td data-label="Image">
-                          <img alt="image" src="assets/images/bg/order2.png" />
+                          <Image alt="image" src="assets/images/bg/order2.png" />
                         </td>
                         <td data-label="Status" className="text-green">
                           Successfully
                         </td>
                         <td data-label="Action">
                           <button className="eg-btn action-btn green">
-                            <img
+                            <Image
                               alt="image"
                               src="assets/images/icons/aiction-icon.svg"
                             />
@@ -1560,14 +1561,14 @@ export default function Dashboard(props) {
                         <td data-label="Bidding ID">Bidding_HvO253gT</td>
                         <td data-label="Bid Amount(NGN)">₦1222.8955</td>
                         <td data-label="Image">
-                          <img alt="image" src="assets/images/bg/order3.png" />
+                          <Image alt="image" src="assets/images/bg/order3.png" />
                         </td>
                         <td data-label="Status" className="text-green">
                           Cancel
                         </td>
                         <td data-label="Action">
                           <button className="eg-btn action-btn green">
-                            <img
+                            <Image
                               alt="image"
                               src="assets/images/icons/aiction-icon.svg"
                             />

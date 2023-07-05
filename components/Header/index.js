@@ -98,7 +98,7 @@ export default function Header() {
           <div className="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
             <div className="mobile-logo-wrap">
               <Link href="/">
-                <img alt="image" src="/assets/images/bg/header-logo.png" />
+                <Image alt="image" src="/assets/images/bg/header-logo.png" />
               </Link>
             </div>
             <div className="menu-close-btn">
@@ -160,7 +160,7 @@ export default function Header() {
         <div className="nav-right d-flex align-items-center">
           <div className="hotline d-xxl-flex d-none">
             <div className="hotline-icon">
-              <img alt="image" src="/assets/images/icons/header-phone.svg" />
+              <Image alt="image" src="/assets/images/icons/header-phone.svg" />
             </div>
             <div className="hotline-info">
               <span>Click To Call</span>

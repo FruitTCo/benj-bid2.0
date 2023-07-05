@@ -5,14 +5,14 @@ import React from "react";
 import Spinner from "./Spinner";
 import AuctionItem from "@/components/AuctionItem";
 
-export default function index() {
+export default function Search() {
   const [loading, setLoading] = React.useState(true);
   const [data, setData] = React.useState([]);
 
   const router = useRouter();
 
-  const search = useSearchParams();
-  const searchQuery = search ? search.get("q") : null;
+  const useSearch = useSearchParams();
+  const searchQuery = useSearch ? search.get("q") : null;
 
   const encodedSearchQuery = encodeURI(searchQuery || "");
 
@@ -39,7 +39,7 @@ export default function index() {
     }
 
     setLoading(false);
-  }, []);
+  }, [encodedSearchQuery]);
 
   if (loading) {
     return <Spinner />;
