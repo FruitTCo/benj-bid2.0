@@ -11,7 +11,7 @@ import AuctionItem from "@/components/AuctionItem";
 
 // Generates `/projects/1` and `/projects/2`
 export async function getStaticPaths() {
-  const items = await fetch("http://localhost:3000/api/auctions", {
+  const items = await fetch("/api/auctions", {
     method: "GET",
   }).then((res) => res.json());
 
@@ -33,7 +33,7 @@ export async function getStaticProps(context) {
 
   // Find the project with matching `id`
   const ActiveData = await fetch(
-    "http://localhost:3000/api/auctions/item_data",
+    "/api/auctions/item_data",
     {
       body: JSON.stringify({
         id: id,
@@ -46,7 +46,7 @@ export async function getStaticProps(context) {
   ).then((res) => res.json());
 
   const otherAunction = await fetch(
-    "http://localhost:3000/api/auctions/other",
+    "/api/auctions/other",
     {
       body: JSON.stringify({
         id: ActiveData.category.id,

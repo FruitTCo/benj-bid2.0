@@ -1603,7 +1603,7 @@ export async function getServerSideProps(context) {
   }
 
   const user_data = await fetch(
-    "http://localhost:3000/api/dashboard/user_data",
+    "/api/dashboard/user_data",
     {
       method: "POST",
       body: JSON.stringify({
@@ -1616,7 +1616,7 @@ export async function getServerSideProps(context) {
   ).then((res) => res.json());
 
   const categories = await fetch(
-    "http://localhost:3000/api/dashboard/categories",
+    "/api/dashboard/categories",
     {
       method: "GET",
     }

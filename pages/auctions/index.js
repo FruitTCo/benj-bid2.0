@@ -91,7 +91,7 @@ export default function Page(props) {
 }
 
 export async function getServerSideProps(context) {
-  const items = await fetch("http://localhost:3000/api/auctions", {
+  const items = await fetch("/api/auctions", {
     method: "GET",
   }).then((res) => res.json());
 
