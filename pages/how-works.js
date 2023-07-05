@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useRef } from "react";
 import ReactWOW from "react-wow";
+import Link from "next/link"
 
 export default function Page() {
   const chooseUs = useRef();
@@ -34,9 +35,8 @@ export default function Page() {
                 One morning, when Gregor Samsa woke from troubled dreams, he
                 found him self transformed in his bed into a horrible vermin.
               </p>
-              <a href="/auth/sign-up" className="eg-btn btn--primary btn--md"
-                >Register Account</a
-              >
+              <Link href="/auth/sign-up" className="eg-btn btn--primary btn--md"
+                >Register Account</Link>
             </div></ReactWOW>
 
 
@@ -89,9 +89,8 @@ export default function Page() {
                 One morning, when Gregor Samsa woke from troubled dreams, he
                 found him self transformed in his bed into a horrible vermin.
               </p>
-              <a href="/dashboard" className="eg-btn btn--primary btn--md"
-                >Add Your Item</a
-              >
+              <Link href="/dashboard" className="eg-btn btn--primary btn--md"
+                >Add Your Item</Link>
             </div></ReactWOW>
             
           </div>
@@ -114,9 +113,8 @@ export default function Page() {
                 One morning, when Gregor Samsa woke from troubled dreams, he
                 found him self transformed in his bed into a horrible vermin.
               </p>
-              <a href="/auctions" className="eg-btn btn--primary btn--md"
-                >Purchase Item</a
-              >
+              <Link href="/auctions" className="eg-btn btn--primary btn--md"
+                >Purchase Item</Link>
             </div></ReactWOW>
             
           </div>
@@ -187,7 +185,7 @@ export default function Page() {
                   </div>
                   <div className="content">
                     <h5>
-                      <a href="#">High Quality Products</a>
+                      <Link href="#">High Quality Products</Link>
                     </h5>
                     <p className="para">
                       Voluptate aut blanditiis accusantium offic expedita
@@ -228,7 +226,7 @@ export default function Page() {
                   </div>
                   <div className="content">
                     <h5>
-                      <a href="#">Creator’s Royalty</a>
+                      <Link href="#">Creator’s Royalty</Link>
                     </h5>
                     <p className="para">
                       Voluptate aut blanditiis accusantium offic expedita
@@ -263,7 +261,7 @@ export default function Page() {
                   </div>
                   <div className="content">
                     <h5>
-                      <a href="#">Top Calss Product Price</a>
+                      <Link href="#">Top Calss Product Price</Link>
                     </h5>
                     <p className="para">
                       Voluptate aut blanditiis accusantium offic expedita
@@ -293,7 +291,7 @@ export default function Page() {
                   </div>
                   <div className="content">
                     <h5>
-                      <a href="#">Support Multiple Currency</a>
+                      <Link href="#">Support Multiple Currency</Link>
                     </h5>
                     <p className="para">
                       Voluptate aut blanditiis accusantium offic expedita
@@ -321,7 +319,7 @@ export default function Page() {
                   </div>
                   <div className="content">
                     <h5>
-                      <a href="#">Show All Bidders History</a>
+                      <Link href="#">Show All Bidders History</Link>
                     </h5>
                     <p className="para">
                       Voluptate aut blanditiis accusantium offic expedita
@@ -348,7 +346,7 @@ export default function Page() {
                   </div>
                   <div className="content">
                     <h5>
-                      <a href="#">100% Happy Customer</a>
+                      <Link href="#">100% Happy Customer</Link>
                     </h5>
                     <p className="para">
                       Voluptate aut blanditiis accusantium offic expedita

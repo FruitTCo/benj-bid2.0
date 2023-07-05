@@ -462,6 +462,7 @@ export default function Home(props) {
             {items.slice(0, 8).map((item) => {
               return (
                 <AuctionItem
+                key={item.id}
                   item={item}
                 />
               );

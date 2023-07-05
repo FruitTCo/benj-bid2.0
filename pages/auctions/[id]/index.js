@@ -7,7 +7,6 @@ import ReactWOW from "react-wow";
 import Timer from "@/components/Timer";
 import MaskedString from "@/components/MaskedString";
 import { useSession } from "next-auth/react";
-import Image from 'next/image'
 
 // Generates `/projects/1` and `/projects/2`
 export async function getStaticPaths() {
