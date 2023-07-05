@@ -1444,6 +1444,7 @@ export default function Dashboard(props) {
                             <div className="d-flex flex-row flex-wrap">
                               {imgsSrc.map((imgLink) => (
                                 <Image
+                                  key={imgLink}
                                   className="p-3"
                                   style={{
                                     width: "100px",
@@ -1451,6 +1452,7 @@ export default function Dashboard(props) {
                                     borderRadius: "24px",
                                   }}
                                   src={imgLink}
+                                  alt="image"
                                 />
                               ))}
                             </div>

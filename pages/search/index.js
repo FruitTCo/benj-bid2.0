@@ -71,7 +71,7 @@ export default function Search() {
       <div className="container">
         <div className="row gy-4 mb-60 d-flex justify-content-center">
           {data?.map((item) => {
-            return <AuctionItem item={item} />;
+            return <AuctionItem key={item.id} item={item} />;
           })}
         </div>
 
