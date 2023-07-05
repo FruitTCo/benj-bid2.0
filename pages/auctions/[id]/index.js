@@ -11,7 +11,7 @@ import AuctionItem from "@/components/AuctionItem";
 
 // Generates `/projects/1` and `/projects/2`
 export async function getStaticPaths() {
-  const items = await fetch("/api/auctions", {
+  const items = await fetch("https://benj-bid2-0.vercel.app/api/auctions", {
     method: "GET",
   }).then((res) => res.json());
 
@@ -33,7 +33,7 @@ export async function getStaticProps(context) {
 
   // Find the project with matching `id`
   const ActiveData = await fetch(
-    "/api/auctions/item_data",
+    "https://benj-bid2-0.vercel.app/api/auctions/item_data",
     {
       body: JSON.stringify({
         id: id,
@@ -46,7 +46,7 @@ export async function getStaticProps(context) {
   ).then((res) => res.json());
 
   const otherAunction = await fetch(
-    "/api/auctions/other",
+    "https://benj-bid2-0.vercel.app/api/auctions/other",
     {
       body: JSON.stringify({
         id: ActiveData.category.id,

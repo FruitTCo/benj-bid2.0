@@ -91,7 +91,7 @@ export default function Page(props) {
 }
 
 export async function getServerSideProps(context) {
-  const items = await fetch("/api/auctions", {
+  const items = await fetch("https://benj-bid2-0.vercel.app/api/auctions", {
     method: "GET",
   }).then((res) => res.json());
 

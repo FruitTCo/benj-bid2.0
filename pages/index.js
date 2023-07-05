@@ -11,7 +11,7 @@ import Head from "next/head";
 export async function getServerSideProps(context) {
 
   const items = await fetch(
-    "/api/auctions",
+    "https://benj-bid2-0.vercel.app/api/auctions",
     {
       method: "GET",
     }

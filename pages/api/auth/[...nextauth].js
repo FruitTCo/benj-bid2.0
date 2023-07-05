@@ -29,7 +29,7 @@ export const authOptions = {
 
             async authorize(credentials, req) {
                 const { email, password } = credentials
-                const res = await fetch("/api/auth/login", {
+                const res = await fetch("https://benj-bid2-0.vercel.app/api/auth/login", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",

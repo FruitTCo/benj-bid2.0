@@ -1598,12 +1598,12 @@ export async function getServerSideProps(context) {
   const providers = await getProviders();
   if (!session) {
     return {
-      redirect: { destination: "/auth/login" },
+      redirect: { destination: "https://benj-bid2-0.vercel.app/auth/login" },
     };
   }
 
   const user_data = await fetch(
-    "/api/dashboard/user_data",
+    "https://benj-bid2-0.vercel.app/api/dashboard/user_data",
     {
       method: "POST",
       body: JSON.stringify({
@@ -1616,7 +1616,7 @@ export async function getServerSideProps(context) {
   ).then((res) => res.json());
 
   const categories = await fetch(
-    "/api/dashboard/categories",
+    "https://benj-bid2-0.vercel.app/api/dashboard/categories",
     {
       method: "GET",
     }
