@@ -7,6 +7,7 @@ import ReactWOW from "react-wow";
 import Timer from "@/components/Timer";
 import MaskedString from "@/components/MaskedString";
 import { useSession } from "next-auth/react";
+import AuctionItem from "@/components/AuctionItem";
 
 // Generates `/projects/1` and `/projects/2`
 export async function getStaticPaths() {
@@ -76,7 +77,7 @@ export default function Page(props) {
     if (data?.Bidders) {
       setBiddings(data?.Bidders);
     }
-  }, []);
+  }, [data?.Bidders]);
 
   function convertDateFormat(dateString) {
     if (dateString === undefined || dateString === null) {
@@ -371,7 +372,7 @@ export default function Page(props) {
                   <div className="row gy-4 mb-60 d-flex justify-content-center">
                     {otherAunction
                       ? otherAunction.slice(0, 4).map((item) => {
-                          return <AuctionItem item={item} />;
+                          return <AuctionItem key={item.id} item={item} />;
                         })
                       : null}
                   </div>
